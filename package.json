@@ -1,0 +1,28 @@
+{
+  "name": "table-of-contents-generator",
+  "version": "1.0.0",
+  "description": "A chrome extension to generate a table of contents while reading articles or for your own articles.",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/css/*.css src/html/*.html src/js/*.js",
+    "postbuild": "cpx ./assets/*.png ./dist/assets && cpx ./manifest.json dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeDraken/table-of-contents-generator.git"
+  },
+  "keywords": [],
+  "author": "CodeDraken",
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "bugs": {
+    "url": "https://github.com/CodeDraken/table-of-contents-generator/issues"
+  },
+  "homepage": "https://github.com/CodeDraken/table-of-contents-generator#readme",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^2.6.3"
+  }
+}
