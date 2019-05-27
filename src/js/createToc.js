@@ -1,4 +1,4 @@
-(function createToc () {
+void (function createToc () {
   try {
     const existingToc = document.getElementById('tableOfContentsDiv')
 
