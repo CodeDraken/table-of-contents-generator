@@ -4,6 +4,7 @@
   "description": "A chrome extension to generate a table of contents while reading articles or for your own articles.",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "parcel build src/css/*.css src/html/*.html src/js/*.js",
     "postbuild": "cpx ./assets/*.png ./dist/assets && cpx ./manifest.json dist",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +24,7 @@
     "cpx": "^1.5.0",
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.3",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "standard": "^12.0.1"
   }
 }
